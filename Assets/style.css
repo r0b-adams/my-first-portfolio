@@ -1,0 +1,150 @@
+:root {
+    /* declares content section width proportions */
+    --margin-percent: 20%;
+    --center-percent: 60%;
+
+    --page-background-color:white;
+    --heading-border-color: #eb2f06;
+    --project-card-border-color: #0984e3;
+
+}  
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: var(--page-background-color);
+}
+
+footer {
+    border-top: 5px solid #0a3d62;
+}
+
+header {
+    border-bottom: 5px solid #0a3d62;
+}
+
+header h1 {
+    font-size: 36px;
+}
+
+nav {
+    width: var(--center-percent);
+    display: flex;
+    justify-content: flex-end;
+}
+
+p {
+    padding: 10px;
+    text-align: justify;
+} 
+
+li {
+    width: 25%;
+    text-align: center;
+}
+
+/* images fill to their containers */
+img {
+    width:100%;
+    height:100%;
+}
+
+/* handles common header/footer styling */
+.header-footer-style {
+    display: flex;
+    align-items: center;
+    color: white;
+    background-color:#2d3436;
+}
+
+/* handles styling of list items */
+.nav-ul-style {
+    display: flex;
+    font-size: 20px;
+    width: 100%;
+    justify-content: space-around;
+    padding: 5px 10px;
+}
+
+/* handles styling of main section headings */
+.main-heading-style {
+    width:var(--margin-percent);
+    text-align: right;
+    font-size: 28px;
+    padding: 10px 10px 10px 0px;
+    border-right:5px double var(--heading-border-color);
+}
+
+/* contains left headings and main content */
+.main-box {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+/* contains project cards and paragraphs */
+.content-box {
+    display: flex;
+    flex-wrap: wrap;
+    width: var(--center-percent);
+    padding-left: 5px;
+}
+
+/* holds images and title cards */
+.project-card {
+    width: 50%;
+    padding: 5px;
+    border: 5px solid var(--page-background-color);
+    background-color: var(--project-card-border-color);
+}
+
+/* displays project titles and languages */
+.title-card {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 50%;
+    bottom: 60px;
+    padding:5px;
+    background-color: var(--project-card-border-color);
+    background-image: linear-gradient(to right, #0984e3, #74b9ff)
+}
+
+/* header/footer text common styling */
+.link-color {
+    color: white;
+    text-decoration: underline;
+}
+
+#my-name {
+    font-size: 36px;
+}
+
+/* displays background image and positions the subtitle */
+#sub-img {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    min-height: 200px;
+    background-image: url(./images/sunset.jpg);
+    background-position: center;
+    background-clip: ;
+}
+
+/* top title card covers the width of its container */
+#featured {
+    width: 100%;
+}
+
+/* ********************************************************* */
+/* ********************************************************* */
+
+/* li:nth-child(odd) {
+    background-color: #74b9ff;
+}
+
+li:nth-child(even) {
+    background-color: #0984e3;
+} */
