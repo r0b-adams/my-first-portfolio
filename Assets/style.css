@@ -2,9 +2,6 @@
     /* declares content section width proportions */
     --margin-percent: 20%;
     --center-percent: 60%;
-
-    --page-background-color:white;
-    --heading-border-color: #FD5E53;
 }  
 
 * {
@@ -12,7 +9,7 @@
 }
 
 body {
-    background-color: var(--page-background-color);
+    background-color: white;
 }
 
 header {
@@ -23,10 +20,12 @@ footer {
     border-top: 5px solid #4B3D60;
 }
 
+/* default name size for desktop */
 header h1 {
     font-size: 36px;
 }
 
+/* desktop nav styling */
 nav {
     width: var(--center-percent);
     display: flex;
@@ -39,7 +38,6 @@ p {
 } 
 
 li {
-    /* width: 25%; */
     text-align: center;
 }
 
@@ -73,7 +71,7 @@ img {
     text-align: right;
     font-size: 26px;
     padding: 10px 10px 10px 0px;
-    border-right:5px double var(--heading-border-color);
+    border-right:5px double #FD5E53;
 }
 
 /* contains left headings and main content */
@@ -95,7 +93,7 @@ img {
 .project-card {
     width: 50%;
     padding: 5px;
-    border: 5px solid var(--page-background-color);
+    border: 5px solid white;
     background-image: linear-gradient(to right, #08183A, #152852, #4B3D60, #FD5E53, #FC9C54, #FFE373);
 
 }
@@ -143,6 +141,7 @@ img {
     background-position: center;
 }
 
+/* styles subtitle for desktop */
 #subtitle {
     padding: 10px 10px 10px 0px;
     color: white;
@@ -158,12 +157,11 @@ img {
     width: 100%;
 }
 
-/* ********************************************************* */
-/* ********************************************************* */
-
+/* govern style behavior at mobile device screen widths */
 @media screen and (max-width: 992px) {
     .main-heading-style {
         font-size: 36px;
+        padding: 0px;
         text-align: center;
         width: 100%;
         background-color: #08183A;
@@ -201,11 +199,14 @@ img {
         text-align: center;
         padding: 0px;
     }
-
-
 }
 
-/* all project cards fill screen width */
+/* style effect when cursor hovers over a link */
+a:hover {
+    opacity: 0.5;
+}
+
+/* all project cards fill screen at this viewport width */
 @media screen and (max-width: 768px) {
 .project-card {
     width: 100%;
@@ -213,6 +214,7 @@ img {
 
 }
 
+/* nav lists form colums at this width */
 @media screen and (max-width: 556px) {
     .nav-ul-style {
         flex-direction: column;
