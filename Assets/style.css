@@ -39,7 +39,7 @@ p {
 } 
 
 li {
-    width: 25%;
+    /* width: 25%; */
     text-align: center;
 }
 
@@ -62,7 +62,7 @@ img {
     display: flex;
     font-size: 20px;
     width: 100%;
-    justify-content: space-around;
+    justify-content: space-evenly;
     padding: 5px 10px;
 }
 
@@ -160,25 +160,3 @@ img {
 
 /* ********************************************************* */
 /* ********************************************************* */
-
-.project-card-test {
-    width: 50%;
-    padding: 5px;
-    /* margin: 5px; */
-    border: inset;
-    border: 5px solid chartreuse;
-    background-image: url(https://placekitten.com/800/400?image=11);
-    min-height: 200px;
-    background-size: cover;
-}
-
-/* displays project titles and languages */
-.title-card-test {
-    display: inline-block;
-    position: relative;
-    width: 50%;
-    bottom: 60px;
-    padding:5px;
-    color:white;
-    background-image: linear-gradient(to right, #08183A, #152852, #4B3D60,#FD5E53);
-}
