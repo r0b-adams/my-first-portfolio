@@ -4,9 +4,7 @@
     --center-percent: 60%;
 
     --page-background-color:white;
-    --heading-border-color: #eb2f06;
-    --project-card-border-color: #0984e3;
-
+    --heading-border-color: #FD5E53;
 }  
 
 * {
@@ -17,12 +15,12 @@ body {
     background-color: var(--page-background-color);
 }
 
-footer {
-    border-top: 5px solid #0a3d62;
+header {
+    border-bottom: 5px solid #152852;
 }
 
-header {
-    border-bottom: 5px solid #0a3d62;
+footer {
+    border-top: 5px solid #4B3D60;
 }
 
 header h1 {
@@ -45,10 +43,10 @@ li {
     text-align: center;
 }
 
-/* images fill to their containers */
+/* images fill to fit project card containers */
 img {
-    width:100%;
-    height:100%;
+    width: 100%;
+    height: 100%
 }
 
 /* handles common header/footer styling */
@@ -97,19 +95,31 @@ img {
     width: 50%;
     padding: 5px;
     border: 5px solid var(--page-background-color);
-    background-color: var(--project-card-border-color);
+    background-image: linear-gradient(to right, #08183A, #152852, #4B3D60, #FD5E53, #FC9C54, #FFE373);
+    /* background-image: url(https://placekitten.com/800/400?image=11); */
+
 }
 
 /* displays project titles and languages */
 .title-card {
-    display: flex;
-    flex-direction: column;
+    display: inline-block;
     position: relative;
     width: 50%;
     bottom: 60px;
     padding:5px;
-    background-color: var(--project-card-border-color);
-    background-image: linear-gradient(to right, #0984e3, #74b9ff)
+    color:white;
+    background-image: linear-gradient(to right, #08183A, #152852, #4B3D60,#FD5E53);
+}
+
+/* governs project name on title card */
+.title-card-heading {
+    font-size: 18px;
+    padding-bottom: 5px;
+}
+
+/* governs project language on title cards */
+.title-card-lang {
+    font-size: 14px;
 }
 
 /* header/footer text common styling */
@@ -118,6 +128,7 @@ img {
     text-decoration: underline;
 }
 
+/* styles my name */
 #my-name {
     font-size: 36px;
 }
@@ -130,10 +141,19 @@ img {
     min-height: 200px;
     background-image: url(./images/sunset.jpg);
     background-position: center;
-    background-clip: ;
 }
 
-/* top title card covers the width of its container */
+#subtitle {
+    padding: 10px 10px 10px 0px;
+    color: white;
+    background-color: #2d3436;
+    width: 100%;
+    font-size: 18px;
+    text-align: right;
+    border-top: 5px solid #0a3d62;
+}
+
+/* top project card covers the width of its container */
 #featured {
     width: 100%;
 }
@@ -141,10 +161,24 @@ img {
 /* ********************************************************* */
 /* ********************************************************* */
 
-/* li:nth-child(odd) {
-    background-color: #74b9ff;
+.project-card-test {
+    width: 50%;
+    padding: 5px;
+    /* margin: 5px; */
+    border: inset;
+    border: 5px solid chartreuse;
+    background-image: url(https://placekitten.com/800/400?image=11);
+    min-height: 200px;
+    background-size: cover;
 }
 
-li:nth-child(even) {
-    background-color: #0984e3;
-} */
+/* displays project titles and languages */
+.title-card-test {
+    display: inline-block;
+    position: relative;
+    width: 50%;
+    bottom: 60px;
+    padding:5px;
+    color:white;
+    background-image: linear-gradient(to right, #08183A, #152852, #4B3D60,#FD5E53);
+}
