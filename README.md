@@ -7,7 +7,7 @@ This project showcases what I've learned so far in my coding bootcamp by applyin
 
 Click on the screenshot to launch the application!
 
-[![screenshot](./assets/images/webapp-screenshot.jpg)](https://comatosino.github.io/Portfolio/)
+[![screenshot](./Assets/images/webapp-screenshot.jpg)](https://comatosino.github.io/Portfolio/)
     
 ## Acknowledgements
 
