@@ -8,10 +8,7 @@ This project showcases what I've learned so far in my coding bootcamp by applyin
 
 ## Table of Contents
 
-- [Installation](#Installation)
 - [Usage](#Usage)
-- [Contributing](#Contributing)
-- [Testing](#Testing)
 - [Questions](#Questions)
 - [License](#License)
 
@@ -28,8 +25,6 @@ Questions? Reach out to me:
 GitHub: [comatosino](https://github.com/comatosino)
 
 Email: adamsiii.robert@gmail.com
-
-
 
 ## License
     
